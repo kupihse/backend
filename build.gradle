@@ -1,0 +1,18 @@
+group 'kupihse'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+mainClassName = "kupihse."
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "io.vertx:vertx-web:3.4.2"
+    compile "io.vertx:vertx-core:3.4.2"
+    compile "io.vertx:vertx-ext:3.4.2"
+}
